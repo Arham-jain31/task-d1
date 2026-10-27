@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+.post-page {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 20px;
+  color: #222;
+}
+
+.post-form {
+  width: 100%;
+}
+
+.post-heading,
+.post-section-heading {
+  background: #e5e5e5;
+  font-weight: 700;
+  padding: 8px 12px;
+  margin: 0 0 16px;
+}
+
+.post-heading {
+  font-size: 20px;
+}
+
+.post-type-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+  margin: 16px 4px 24px;
+  font-size: 14px;
+}
+
+.post-type-row label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.post-section-heading {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.post-help {
+  margin: 0 12px 18px;
+  font-size: 13px;
+  color: #555;
+}
+
+.post-label {
+  display: block;
+  margin: 12px 4px 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.post-input,
+.post-textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #888;
+  background: white;
+  padding: 9px 10px;
+  font: inherit;
+  font-size: 14px;
+}
+
+.post-input:focus,
+.post-textarea:focus {
+  outline: 2px solid #9ca3af;
+  outline-offset: 1px;
+}
+
+.post-textarea {
+  resize: vertical;
+}
+
+.question-description {
+  min-height: 210px;
+}
+
+.article-abstract {
+  min-height: 85px;
+}
+
+.article-body {
+  min-height: 210px;
+}
+
+.tag-note {
+  margin: 5px 2px 0;
+  color: #666;
+  font-size: 12px;
+}
+
+.post-button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 22px;
+}
+
+.post-submit {
+  min-width: 150px;
+  background: #a3a3a3;
+  color: #111;
+  padding: 10px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.post-submit:hover {
+  background: #888;
+}
+
+@media (max-width: 600px) {
+  .post-page {
+    margin-top: 20px;
+    padding: 0 12px;
+  }
+
+  .post-type-row {
+    gap: 12px;
+  }
+
+  .post-submit {
+    width: 100%;
+  }
+}
